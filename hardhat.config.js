@@ -71,7 +71,7 @@ module.exports = {
   },
   networks: {
     local: {
-      url: "http://localhost:8788",
+      url: process.env.LOCAL_URL,
       allowUnlimitedContractSize: true,
       accounts: [
         process.env.LOCAL_PRIVATE_KEY,
